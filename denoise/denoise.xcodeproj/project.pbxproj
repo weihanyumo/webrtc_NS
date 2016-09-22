@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960C333F1D93AFEC00601B98 /* fft4g.c in Sources */ = {isa = PBXBuildFile; fileRef = 960C333D1D93AFEC00601B98 /* fft4g.c */; };
+		9649247E1D936E0600AC0B65 /* noise_suppression.c in Sources */ = {isa = PBXBuildFile; fileRef = 964924711D936E0600AC0B65 /* noise_suppression.c */; };
+		9649247F1D936E0600AC0B65 /* noise_suppression_x.c in Sources */ = {isa = PBXBuildFile; fileRef = 964924731D936E0600AC0B65 /* noise_suppression_x.c */; };
+		964924801D936E0600AC0B65 /* ns_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 964924751D936E0600AC0B65 /* ns_core.c */; };
+		964924811D936E0600AC0B65 /* nsx_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 964924771D936E0600AC0B65 /* nsx_core.c */; };
+		964924821D936E0600AC0B65 /* nsx_core_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 964924791D936E0600AC0B65 /* nsx_core_c.c */; };
+		96A2C1331D90CD1C00203AF8 /* PBNoiseReduction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96A2C1321D90CD1C00203AF8 /* PBNoiseReduction.h */; };
+		96A2C1351D90CD1C00203AF8 /* PBNoiseReduction.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2C1341D90CD1C00203AF8 /* PBNoiseReduction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96A2C12D1D90CD1C00203AF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				96A2C1331D90CD1C00203AF8 /* PBNoiseReduction.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960C33361D93ABAA00601B98 /* checks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checks.h; sourceTree = "<group>"; };
+		960C33371D93AC5E00601B98 /* signal_processing_library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signal_processing_library.h; sourceTree = "<group>"; };
+		960C33381D93AC7B00601B98 /* real_fft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = real_fft.h; sourceTree = "<group>"; };
+		960C33391D93ACD500601B98 /* typedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedefs.h; sourceTree = "<group>"; };
+		960C333A1D93AE3000601B98 /* cpu_features_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_features_wrapper.h; sourceTree = "<group>"; };
+		960C333B1D93AE3000601B98 /* spl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spl_inl.h; sourceTree = "<group>"; };
+		960C333C1D93AE5800601B98 /* compile_assert_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile_assert_c.h; sourceTree = "<group>"; };
+		960C333D1D93AFEC00601B98 /* fft4g.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fft4g.c; sourceTree = "<group>"; };
+		960C333E1D93AFEC00601B98 /* fft4g.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft4g.h; sourceTree = "<group>"; };
+		964924701D936E0600AC0B65 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		964924711D936E0600AC0B65 /* noise_suppression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise_suppression.c; sourceTree = "<group>"; };
+		964924721D936E0600AC0B65 /* noise_suppression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise_suppression.h; sourceTree = "<group>"; };
+		964924731D936E0600AC0B65 /* noise_suppression_x.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise_suppression_x.c; sourceTree = "<group>"; };
+		964924741D936E0600AC0B65 /* noise_suppression_x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise_suppression_x.h; sourceTree = "<group>"; };
+		964924751D936E0600AC0B65 /* ns_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ns_core.c; sourceTree = "<group>"; };
+		964924761D936E0600AC0B65 /* ns_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ns_core.h; sourceTree = "<group>"; };
+		964924771D936E0600AC0B65 /* nsx_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nsx_core.c; sourceTree = "<group>"; };
+		964924781D936E0600AC0B65 /* nsx_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nsx_core.h; sourceTree = "<group>"; };
+		964924791D936E0600AC0B65 /* nsx_core_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nsx_core_c.c; sourceTree = "<group>"; };
+		9649247C1D936E0600AC0B65 /* nsx_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nsx_defines.h; sourceTree = "<group>"; };
+		9649247D1D936E0600AC0B65 /* windows_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows_private.h; sourceTree = "<group>"; };
+		96A2C12F1D90CD1C00203AF8 /* libdenoise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdenoise.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A2C1321D90CD1C00203AF8 /* PBNoiseReduction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBNoiseReduction.h; sourceTree = "<group>"; };
+		96A2C1341D90CD1C00203AF8 /* PBNoiseReduction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBNoiseReduction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A2C12C1D90CD1C00203AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9649246E1D936E0600AC0B65 /* ns_mine */ = {
+			isa = PBXGroup;
+			children = (
+				960C333D1D93AFEC00601B98 /* fft4g.c */,
+				960C333E1D93AFEC00601B98 /* fft4g.h */,
+				960C333C1D93AE5800601B98 /* compile_assert_c.h */,
+				960C333A1D93AE3000601B98 /* cpu_features_wrapper.h */,
+				960C333B1D93AE3000601B98 /* spl_inl.h */,
+				960C33391D93ACD500601B98 /* typedefs.h */,
+				960C33381D93AC7B00601B98 /* real_fft.h */,
+				960C33361D93ABAA00601B98 /* checks.h */,
+				960C33371D93AC5E00601B98 /* signal_processing_library.h */,
+				9649246F1D936E0600AC0B65 /* ns */,
+			);
+			path = ns_mine;
+			sourceTree = "<group>";
+		};
+		9649246F1D936E0600AC0B65 /* ns */ = {
+			isa = PBXGroup;
+			children = (
+				964924701D936E0600AC0B65 /* defines.h */,
+				964924711D936E0600AC0B65 /* noise_suppression.c */,
+				964924721D936E0600AC0B65 /* noise_suppression.h */,
+				964924731D936E0600AC0B65 /* noise_suppression_x.c */,
+				964924741D936E0600AC0B65 /* noise_suppression_x.h */,
+				964924751D936E0600AC0B65 /* ns_core.c */,
+				964924761D936E0600AC0B65 /* ns_core.h */,
+				964924771D936E0600AC0B65 /* nsx_core.c */,
+				964924781D936E0600AC0B65 /* nsx_core.h */,
+				964924791D936E0600AC0B65 /* nsx_core_c.c */,
+				9649247C1D936E0600AC0B65 /* nsx_defines.h */,
+				9649247D1D936E0600AC0B65 /* windows_private.h */,
+			);
+			path = ns;
+			sourceTree = "<group>";
+		};
+		96A2C1261D90CD1C00203AF8 = {
+			isa = PBXGroup;
+			children = (
+				96A2C1311D90CD1C00203AF8 /* denoise */,
+				96A2C1301D90CD1C00203AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96A2C1301D90CD1C00203AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A2C12F1D90CD1C00203AF8 /* libdenoise.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96A2C1311D90CD1C00203AF8 /* denoise */ = {
+			isa = PBXGroup;
+			children = (
+				9649246E1D936E0600AC0B65 /* ns_mine */,
+				96A2C1321D90CD1C00203AF8 /* PBNoiseReduction.h */,
+				96A2C1341D90CD1C00203AF8 /* PBNoiseReduction.m */,
+			);
+			path = denoise;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A2C12E1D90CD1C00203AF8 /* denoise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A2C1381D90CD1C00203AF8 /* Build configuration list for PBXNativeTarget "denoise" */;
+			buildPhases = (
+				96A2C12B1D90CD1C00203AF8 /* Sources */,
+				96A2C12C1D90CD1C00203AF8 /* Frameworks */,
+				96A2C12D1D90CD1C00203AF8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = denoise;
+			productName = denoise;
+			productReference = 96A2C12F1D90CD1C00203AF8 /* libdenoise.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A2C1271D90CD1C00203AF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = duhaodong;
+				TargetAttributes = {
+					96A2C12E1D90CD1C00203AF8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 96A2C12A1D90CD1C00203AF8 /* Build configuration list for PBXProject "denoise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96A2C1261D90CD1C00203AF8;
+			productRefGroup = 96A2C1301D90CD1C00203AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A2C12E1D90CD1C00203AF8 /* denoise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A2C12B1D90CD1C00203AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964924821D936E0600AC0B65 /* nsx_core_c.c in Sources */,
+				964924811D936E0600AC0B65 /* nsx_core.c in Sources */,
+				9649247F1D936E0600AC0B65 /* noise_suppression_x.c in Sources */,
+				9649247E1D936E0600AC0B65 /* noise_suppression.c in Sources */,
+				960C333F1D93AFEC00601B98 /* fft4g.c in Sources */,
+				96A2C1351D90CD1C00203AF8 /* PBNoiseReduction.m in Sources */,
+				964924801D936E0600AC0B65 /* ns_core.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		96A2C1361D90CD1C00203AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96A2C1371D90CD1C00203AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A2C1391D90CD1C00203AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96A2C13A1D90CD1C00203AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A2C12A1D90CD1C00203AF8 /* Build configuration list for PBXProject "denoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A2C1361D90CD1C00203AF8 /* Debug */,
+				96A2C1371D90CD1C00203AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A2C1381D90CD1C00203AF8 /* Build configuration list for PBXNativeTarget "denoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A2C1391D90CD1C00203AF8 /* Debug */,
+				96A2C13A1D90CD1C00203AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A2C1271D90CD1C00203AF8 /* Project object */;
+}

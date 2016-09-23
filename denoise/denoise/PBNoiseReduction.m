@@ -46,7 +46,7 @@
 -(BOOL)initWithSample:(int)sample Channel:(int)channel
 {
     int nMode = 2;
-    int ret = 0;
+    
     _sample = sample;
     _channel = channel;
     leaveLen = 0;
@@ -94,7 +94,7 @@
 {
     if (!handle)
     {
-        [self initWithSample:16000 Channel:2];
+        [self initWithSample:16000 Channel:1];
     }
     char *pOut = outData;
     int outLen = 0;

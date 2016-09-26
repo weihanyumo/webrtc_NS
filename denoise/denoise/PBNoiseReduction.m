@@ -17,14 +17,17 @@
 @interface PBNoiseReduction()
 {
     NsHandle *handle;
+    
+    short *NSBuffer;
+    int NSBufSize;
+    
+    float *pInData;
+    float *pOutData;
+    
     char leaveData[LEAVE_SIZE];
     int  leaveLen;
     
     int frameSize;
-    int NSBufSize;
-    short *temp;
-    float *pInData;
-    float *pOutData;
 }
 
 @end
@@ -74,7 +77,7 @@
     frameSize = self.sample / 100 * self.channel; //160;//10ms对应于160个short
     NSBufSize = frameSize*sizeof(short);
     
-    temp = (short*)malloc(frameSize *sizeof(short));
+    NSBuffer = (short*)malloc(frameSize *sizeof(short));
     pInData = (float*)malloc(frameSize * sizeof(float));
     pOutData = (float*)malloc(frameSize * sizeof(float));
     return  YES;
@@ -102,18 +105,19 @@
     int remainDataLen = len + leaveLen;
     while (remainDataLen >= NSBufSize)
     {
-        memset(temp, 0, NSBufSize);
+        memset(NSBuffer, 0, NSBufSize);
         if (leaveLen > 0)
         {
-            memcpy(temp, leaveData, leaveLen);
+            memcpy(NSBuffer, leaveData, leaveLen);
         }
-        
-        memcpy(temp+leaveLen, pcmData, (NSBufSize-leaveLen));
+        char *tmp = (char *)NSBuffer;
+        tmp += leaveLen;
+        memcpy(tmp, pcmData, (NSBufSize-leaveLen));
         leaveLen = 0;
         
         for(int i = 0; i < frameSize; i++)
         {
-            pInData[i] = (float)temp[i];
+            pInData[i] = (float)NSBuffer[i];
         }
         
         WebRtcNs_AnalyzeCore((NoiseSuppressionC*)handle,pInData);
@@ -122,10 +126,10 @@
         
         for(int i = 0; i < frameSize; i++)
         {
-            temp[i] = (short)pOutData[i];
+            NSBuffer[i] = (short)pOutData[i];
         }
         
-        memcpy(pOut, temp, NSBufSize);
+        memcpy(pOut, NSBuffer, NSBufSize);
         pOut += NSBufSize;
         remainDataLen -= NSBufSize;
         outLen += NSBufSize;
@@ -147,10 +151,10 @@
 {
     WebRtcNs_Free(handle);
     handle = NULL;
-    if (temp)
+    if (NSBuffer)
     {
-        free(temp);
-        temp = NULL;
+        free(NSBuffer);
+        NSBuffer = NULL;
     }
     if(pInData)
     {
